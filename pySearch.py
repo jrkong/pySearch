@@ -5,7 +5,7 @@ import argparse
 import webbrowser
 
 argparser = argparse.ArgumentParser()
-argparser.add_argument("-s", help="Takes a query to search for and searches it.", nargs="*")
+argparser.add_argument("-s", action="append", help="Takes a query to search for and searches it.", nargs="*")
 argparser.add_argument("-e", "--engine", help="Changes the name or alias of a search engine and sets it as the search engine for the session", nargs="+")
 argparser.add_argument("-d", "--domain", help="Changes the domain extention", nargs="+")
 
@@ -17,7 +17,7 @@ class Search:
         self.searchQuery = ""
         self.engine = engineIn
         self.domain = domainIn
-        self.url = "";
+        self.url = ""
         self.searchString = "/search?q="
     #end of constructor
 
@@ -48,7 +48,6 @@ class Search:
     #end of openBrowser()
 #end of Query
 
-searchObj = Search(args.s)
 if args.engine is not None:
     searchObj.setEngine(args.engine[0])
 
@@ -56,5 +55,7 @@ if args.domain is not None:
     searchObj.setdomain(args.domain[0])
 #end of cmd args handling
 
-searchObj.buildLink()
-searchObj.openBrowser()
+for search in args.s:
+    searchObj = Search(search)
+    searchObj.buildLink()
+    searchObj.openBrowser()
