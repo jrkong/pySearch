@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pySearch
+Version: 1.0
+Summary: cli tool for executing browser searches
+Home-page: https://github.com/jrkong/pySearch
+Author: jrkong
+Author-email: jrkong.hfd@gmail.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console

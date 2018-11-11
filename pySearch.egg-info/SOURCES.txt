@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+pySearch.egg-info/PKG-INFO
+pySearch.egg-info/SOURCES.txt
+pySearch.egg-info/dependency_links.txt
+pySearch.egg-info/entry_points.txt
+pySearch.egg-info/top_level.txt
+tests/__init__.py
+tests/test_search.py
