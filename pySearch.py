@@ -27,9 +27,14 @@ class Search:
     #end of setEngine
 
     #set domain engine
-    def setdomain(self, domainIn):
+    def setDomain(self, domainIn):
         self.domain = domainIn
     #end of setdomain
+    
+    #set search Query
+    def setQuery(self, searchIn):
+        self.searchRaw = searchIn
+    #end of setQuery
 
     def buildLink(self):
         if self.engine == "amazon":
@@ -48,13 +53,18 @@ class Search:
     #end of openBrowser()
 #end of Query
 
-searchObj = Search(args.s)
+
+searchObj = Search()
+
 if args.engine is not None:
     searchObj.setEngine(args.engine[0])
 
 if args.domain is not None:
-    searchObj.setdomain(args.domain[0])
+    searchObj.setDomain(args.domain[0])
 #end of cmd args handling
 
-searchObj.buildLink()
-searchObj.openBrowser()
+for search in args.s:
+    searchObj.setQuery(search)
+    searchObj.buildLink()
+    searchObj.openBrowser()
+
