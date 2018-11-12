@@ -1,0 +1,3 @@
+# pySearch Tests
+
+pySearch tests use the [pytest](https://docs.pytest.org) library which is not part of the default Python library. If this is the first time pytest tests are being run on the machine use `pip install -r requirements.txt` to install pytest and it's dependencies (NOTE your `pip` alias may differ based on your installation). Afterwards pySearch tests can be run with the `pytest` command when inside the pySearch directory.
