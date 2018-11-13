@@ -1,35 +1,36 @@
 # pySearch
 
-
-pySearch is a simple command line python script that opens a new browser tab to search the input string. pySearch allows for seamlessly performing a web search without removing your hands off the keyboard. 
-
-Normally, someone working on a command line interface, to perform a web search a user would need to take one hand off the keyboard, start/navigate to their browser with their mouse (or alt+tab however they would still need to navigate to the search bar with the mouse) and then take their hand off the mouse so they can use the keyboard to type their search. 
+pySearch is a simple command line python script that allows for seamlessly performing a web search without removing your hands off the keyboard as it opens a new browser tab to search the input string. Normally when working on a command line interface, a user would need to use their mouse to perform a web search as they would take one hand off the keyboard and navigate to their browser. Even when using ALT+TAB, users would still need to navigate to the search bar with the mouse and then return to the keyboard to type their search. 
 
 pySearch simplifies this to a single command line command.
 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
 Software you will need
+
  Python - https://www.python.org/downloads/ 
- Text Editor (eg Visual Studio Code) 
+ Text Editor  - eg Visual Studio Code (if planning to edit this repo) 
 
 
 ### Installing
 
-Clone this Repo and open up the file onto the text editor. 
-To run, use the command [...] 
+Clone this Repo  
+
+In Command Line Prompt 
+
+To run use 
+
+python C:\Users\pySearch\pySearch.py  ( different path name where you have cloned pySearch into) 
+
 
 ## Running the tests
 
 To be added .. 
-
-## Deployment
-
 
 ## Built With
 
@@ -53,7 +54,7 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 The goal of pySearch is to bring web search capabilities to your command line so initiating a web search doesn't require taking your hand off the keyboard. The current goal is to integrate as much of the web search workflow into the command line so users can get all the keyboard interaction out of the way before taking one hand off the keyboard to use the mouse to interact with the browser.
 
-###Specific Goals 
+### Specific Goals 
 
 Support basic webcrawling which would allow basic searches, basic dictionary lookup would be a great test case for this, to be performed before opening a browser. (think Unix man pages)
 
