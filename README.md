@@ -36,17 +36,16 @@ python C:\Users\pySearch\pySearch.py  ( different path name where you have clone
  <li> -h  will provide description of command line arguments </li> 
  </ol>
 
-
-## Running the tests
-
-To be added .. 
-
 ## Built With
 
 Python 3 
 
 ## Contributing
 
+### Running the Tests
+pySearch tests use the [pytest](https://docs.pytest.org) library which is not part of the default Python library. If this is the first time pytest tests are being run on the machine use `pip install -r requirements.txt` to install pytest and it's dependencies (NOTE your `pip` alias may differ based on your installation). Afterwards pySearch tests can be run with the `pytest` command when inside the pySearch directory.
+
+### Style Enforcement with Flake8
 We are using Flake8 for style guide enforcement in pySearch.
 It ensures that our code does not have any linting errors and is consistent.
 
