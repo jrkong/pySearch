@@ -3,7 +3,6 @@ pySearch is a simple command line python script that allows for seamlessly perfo
 
 pySearch simplifies this to a single command line command.
 
-
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
