@@ -47,6 +47,20 @@ Python 3
 
 ## Contributing
 
+We are using Flake8 for style guide enforcement in pySearch.
+It ensures that our code does not have any linting errors and is consistent.
+
+Before submitting any Pull Request, please ensure to complete the following steps:
+
+Install Flake8: "python -m pip install flake8"
+
+Run Flake8 on the whole project from the root folder: "flake8 ."
+Run Flake8 on a specific file: "flake8 search.py"
+
+A list of errors will be returned that need to be fixed, please fix them before submitting
+your Pull Request!
+
+
 Please read [CONTRIBUTING.md] for details on our code of conduct, and the process for submitting pull requests to us.
 
 ( To Be added )
@@ -54,7 +68,8 @@ Please read [CONTRIBUTING.md] for details on our code of conduct, and the proces
 
 ## Authors
 
-* **Alex Kong** - *Initial work* ( https://github.com/jrkong )
+* **Alex Kong** ( https://github.com/jrkong )
+* **Alexander Ponomaroff** ( https://github.com/alexander-ponomaroff )
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project. (TO be added) 
 
